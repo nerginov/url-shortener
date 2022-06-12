@@ -1,0 +1,25 @@
+*,*::before,*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+//hidding elements class
+.hidden{
+    display: none !important;
+}
+
+
+//line break control over different screens
+.responsive-br{
+    display: none;
+}
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>URL shortener</title>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.svg" alt="logo-img">
+        <div class="burger-menu">
+            <input type="checkbox"  class="burger-menu__checkbox">
+            <div class="burger-menu__lines">
+            <span class="line line--1"></span>
+            <span class="line line--2"></span>
+            <span class="line line--3"></span>
+            </div>
+        </div>
+      
+        <div class="nav-container hidden">
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+           <div class="authentication">
+         <button class="authentication__login-btn">Login</button>
+         <button class="authentication__sign-btn">Sign Up</button>
+           </div>
+        </div>
+    </nav>
+    <main>
+<!-- introductional section + link shortener -->
+    <section class="introductional-section">
+        <div class="img-wrapper">
+            <img src="images/illustration-working.svg" alt="working-illustration" '>
+        </div>
+        <div class="content-wrapper">
+            <h2>
+                More than just<br>shorter links
+            </h2>
+            <p>Build your brand's recognition and get detailed <br class="responsive-br"> insight on how your links are performing</p>
+            <button class="getStarted-btn getStarted-btn--introduction">Get Started</button>
+        </div>
+
+        <!--inject via javascript-->
+        
+       
+        <div class="link-shortener">
+            <input type="text" class="link-shortener__input" placeholder="Shorten a link here...">
+            <button class="link-shortener__btn">Shorten It!</button>
+            </div>
+    </section>
+<!-- Advanced statistics-section -->
+    <section class="statistics-section">
+        <div class="intro">
+            <h2>Advanced Statistics</h2>
+            <p>Track how your links are performing across the web<br class="responsive-br"> with our advanced statistics dashboard</p>
+        </div>
+        <div class="wrapper-container">
+        <div class='wrapper wrapper--recognition'>
+            <div class="image-container"><img src="images/icon-brand-recognition.svg" alt="brand-recognition-icon" class="wrapper__icon wrapper__icon--recognition">
+            </div>
+            <h2>Brand Recognition</h2>
+            <p>Boost your brand recognition with each click.Generic links don't mean a thing.Branded links help instil confidence in your content.</p>
+        </div>
+        <div class="wrapper wrapper--records">
+            <div class="image-container">
+            <img src="images/icon-detailed-records.svg" alt="detailed-records-icon" class="wrapper__icon wrapper__icon--records">
+           </div>
+            <h2>Detailed Records</h2>
+            <p>Gain insights into who is clicking your links.Knowing when adn where people engage wih your content helps inform better decisions.</p>
+        </div>
+        <div class="wrapper wrapper--customizable">
+            <div class="image-container">
+            <img src="images/icon-fully-customizable.svg" alt="fully-customizable-icon" class="wrapper__icon wrapper__icon--customizable">
+            </div>
+            <h2>Fully Customizable</h2>
+            <p>Improve brand awareness and content discoverablility through cusomizable links, supercharging audience engagement.</p>
+        </div>
+    </div>
+    </section>
+<!-- boost section -->
+    <section class="boost-section">
+      <h2>Boost your links today</h2>
+      <button class="getStarted-btn getStarted-btn--boost">Get Started</button>
+    </section>
+    </main>
+<!-- FOOTER -->
+    <footer>
+        <img src="images/logo.svg" alt="logo-img" class="footer__logo">
+
+        <div class='links links--features'>
+        <h4>Features</h4>
+            <ul>
+                <li><a href="#">Link Shortening</a></li>
+                <li><a href="#">Branded Links</a></li>
+                <li><a href="#">Analytics</a></li>
+            </ul>
+        </div>
+
+        <div class="links links--resources">
+            <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="links links--company">
+                <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+<!-- footer-social-icons -->
+                <div class="socials">
+                    <img src="images/icon-facebook.svg" alt="facebook-icon" class="socials__icon socials__icon--facebook">
+                    <img src="images/icon-twitter.svg" alt="twitter-icon" class="socials__icon socials__icon--twitter">
+                    <img src="images/icon-pinterest.svg" alt="pinterest-icon" class="socials__icon socials__icon--pinterest">
+                    <img src="images/icon-instagram.svg" alt="instagram-icon" class="socials__icon socials__icon--instagram">
+                </div>
+    </footer>
+
+</body>
+</html>

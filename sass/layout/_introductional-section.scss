@@ -1,0 +1,109 @@
+
+.introductional-section{
+    position: relative;
+    padding-bottom: 16rem;
+    .img-wrapper{
+    img{
+        height: auto;
+        max-width: 140%;
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+       }
+    }
+    .content-wrapper{
+        margin: 0rem 2rem 4rem 2rem;
+        text-align: center;
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .link-shortener{
+        @include absolute-center(horizontal);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        bottom: -8rem;
+        height: 16rem;
+        width: 90%;
+        border-radius: 1rem;
+        background-color: $DarkViolet;
+        background-image:url(/images/bg-shorten-mobile.svg);
+        background-repeat: no-repeat;
+        background-position-x:right;
+        background-size: auto;
+        
+        &__input{
+            width: 100%;
+            height: 5rem;
+            padding-left: 2rem;
+            border-radius: 0.8rem;
+        }
+        &__input:invalid{
+            border: .3rem solid $Red;
+        }
+        &__input:invalid::placeholder{
+            color:$Red;
+        }
+
+    }
+    
+}
+
+
+@include media(large){
+    .introductional-section{
+        display: flex;
+        align-content: center;
+        margin-left: 16rem;
+        margin-right: 16rem;
+       
+        .img-wrapper{
+            order:2;
+           img{
+               position: relative;
+               left:15rem
+           }
+            
+        }
+        .content-wrapper{
+            margin-left: 0rem;
+            white-space: nowrap;
+            h2{margin-bottom: 0rem;
+            line-height: 9rem;}
+        }
+        .link-shortener{
+            width:100%;
+            height: 20rem;
+            flex-direction: row;
+            background-image: url(/images/bg-shorten-desktop.svg);
+            background-size: cover;
+            padding-left: 6rem;
+            padding-right: 6rem;
+            &__input{
+                flex-basis: 80%;
+                height: 7rem;
+                margin-right: 4rem;
+            }
+            }
+    }
+}
+
+//injected via js on the shorten input
+.error-span{
+    color: $Red;
+    opacity: 0.8;
+    text-align: left;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+@include media(medium){
+    .responsive-br{
+        display:inline;
+    }
+}

@@ -1,0 +1,215 @@
+html{
+    font-family: 'Poppins', sans-serif; //500/700
+}
+
+.nav-container{
+    ul{
+        li{
+           list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:whitesmoke;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+    .authentication{
+        &__login-btn{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+        &__sign-btn{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+    }
+}
+
+@include media(large){
+    .nav-container{
+        ul{
+            li{
+                a{ 
+                    color:$GrayishViolet;
+                    font-size: 1.8rem;
+                    &:hover{
+                        color:$VeryDarkViolet;
+                    }
+             }
+            }
+        }
+        .authentication{
+            &__login-btn{
+                font-size: 1.8rem;
+                color:$GrayishViolet;
+            }
+            &__sign-btn{
+                font-size: 1.8rem;
+            }
+    }
+    }
+}
+
+    
+    
+///end of nav
+
+main{
+    .getStarted-btn{
+        font-size: 2rem;
+        color: whitesmoke;
+        font-weight: 700;
+    }
+    
+    .introductional-section{
+        h2{
+            font-weight: 700;
+            font-size: 4.5rem;
+            color: $VeryDarkViolet;
+        }
+        p{
+            font-size: 1.8rem;
+            color: $GrayishViolet;
+        }
+
+        .link-shortener{
+            &__btn{
+                font-size: 2rem;
+                color: whitesmoke;
+                font-weight: 700;
+            }
+
+            &__input{
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .statistics-section{
+        .intro{
+           
+            h2{
+                font-size: 3rem;
+                color:$VeryDarkViolet;
+                font-weight: 700;
+            }
+            p{
+                font-size: 1.8rem;;
+                color:$GrayishViolet
+            }
+        }
+        .wrapper{
+            h2{
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: $VeryDarkViolet;
+            }
+            p{
+                font-size: 1.8rem;
+                color: $GrayishViolet;
+            }
+        }
+    }
+
+    .boost-section{
+        h2{
+            font-size: 3rem;
+            font-weight: 700;
+            color: whitesmoke;
+        }
+
+    }
+}
+
+@include media(large){
+    main{
+        .introductional-section{
+        .content-wrapper{
+            text-align: left;
+            h2{
+                font-size: 8rem;
+            }
+            p{
+                font-size: 2.5rem;
+            }
+        }
+        .link-shortener{
+            &__input{
+                font-size: 2.5rem;
+            }
+            &__btn{
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .statistics-section{
+       .intro{ 
+        h2{
+            font-size: 4rem !important;
+        }
+    }
+}
+    .boost-section{
+        h2{ 
+            font-size: 4rem;
+        }
+        .getStarted-btn--boost{
+            font-size: 2.5rem;
+        }
+}
+}
+}
+
+//js injected links
+
+.link-results{
+    &__original{
+        font-size: 1.6rem;
+        color:$VeryDarkViolet;
+    }
+     &__btn{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: whitesmoke;
+    }
+    &__short{
+        font-size: 1.8rem;
+        color:$Cyan;
+    }
+}
+@include  media(large){
+    .link-results{
+    &__original,
+    &__btn,
+    &__short{
+        font-size: 2rem;
+    }}
+}
+
+//end of main 
+
+footer{
+    .links{
+        color: whitesmoke;
+        font-size: 1.8rem;
+    
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color:$GrayishViolet;
+            &:hover{
+                color:$Cyan;
+            }
+    }
+}
+    .socials{
+    &__icon:hover{
+        filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+    }
+}
+}
