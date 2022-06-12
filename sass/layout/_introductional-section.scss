@@ -89,6 +89,9 @@
             }
             }
     }
+     .responsive-br{
+        display:inline;
+    }
 }
 
 //injected via js on the shorten input
@@ -101,9 +104,4 @@
     padding-left: 0.5rem;
     margin-bottom: 1rem;
 
-}
-@include media(medium){
-    .responsive-br{
-        display:inline;
-    }
 }
