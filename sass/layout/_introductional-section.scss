@@ -30,7 +30,7 @@
         width: 90%;
         border-radius: 1rem;
         background-color: $DarkViolet;
-        background-image:url(/images/bg-shorten-mobile.svg);
+        background-image:url(../images/bg-shorten-mobile.svg);
         background-repeat: no-repeat;
         background-position-x:right;
         background-size: auto;
@@ -49,7 +49,9 @@
         }
 
     }
-    
+    .responsive-br{
+        display: none;
+    }
 }
 
 
@@ -78,7 +80,7 @@
             width:100%;
             height: 20rem;
             flex-direction: row;
-            background-image: url(/images/bg-shorten-desktop.svg);
+            background-image: url(../images/bg-shorten-desktop.svg);
             background-size: cover;
             padding-left: 6rem;
             padding-right: 6rem;
@@ -88,6 +90,9 @@
                 margin-right: 4rem;
             }
             }
+    }
+    .responsive-br{
+        display:inline !important;
     }
 }
 
@@ -102,8 +107,4 @@
     margin-bottom: 1rem;
 
 }
-@include media(medium){
-    .responsive-br{
-        display:inline;
-    }
-}
+
