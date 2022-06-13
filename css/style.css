@@ -394,6 +394,12 @@ main {
   padding-left: 0.5rem;
   margin-bottom: 1rem; }
 
+@media only screen and (min-width: 1440px) {
+  .error-span {
+    position: absolute;
+    top: 15rem;
+    font-size: 1.6rem; } }
+
 .statistics-section {
   background-color: #eef0f6;
   padding: 16rem 2rem 5rem 2rem; }

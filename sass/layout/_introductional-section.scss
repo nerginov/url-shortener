@@ -107,3 +107,10 @@
     margin-bottom: 1rem;
 
 }
+@include media(large){
+    .error-span{
+        position: absolute;
+        top:15rem;
+        font-size: 1.6rem;
+    }
+}
