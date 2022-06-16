@@ -100,24 +100,24 @@ document.addEventListener('click', function(e){
 
 // menu on different sizes
 window.addEventListener('resize', ()=>{
-    if(window.innerWidth >= 1440){
+    if(window.innerWidth >= 1200){
         burgerDropDown.classList.remove('hidden')
         burgerCheckbox.checked = false
         mainTag.style.filter = 'none'
         burgerDropDown.style.animation='none'
     }
 
-    //else if triggers only if i resize <1440 after i have already resized >1440  otherwise closing by clicking outside doesnt work and also X button request dobule click.
+    //else if triggers only if i resize <1200 after i have already resized >1200  otherwise closing by clicking outside doesnt work and also X button request dobule click.
 
-   else if(window.innerWidth < 1440 && burgerCheckbox.checked == false && !burgerDropDown.classList.contains('hidden')){
+   else if(window.innerWidth < 1200 && burgerCheckbox.checked == false && !burgerDropDown.classList.contains('hidden')){
         burgerCheckbox.checked=true
     }
  })
 
 
- //navigation style on 1440 load
+ //navigation style on 1200 load
 window.addEventListener('load', ()=>{
-    if(window.innerWidth >= 1440){
+    if(window.innerWidth >= 1200){
         burgerDropDown.classList.remove('hidden')
     }
 })

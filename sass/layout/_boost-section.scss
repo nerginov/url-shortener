@@ -12,7 +12,7 @@
     background-position-x: right;
 }
 
-@include media(large){
+@include media(medium){
     .boost-section{
         background-image: url(../images/bg-boost-desktop.svg);
     }

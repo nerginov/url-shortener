@@ -43,7 +43,7 @@ html {
   font-weight: 700;
   color: whitesmoke; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .nav-container ul li a {
     color: #9e9aa7;
     font-size: 1.8rem; }
@@ -100,7 +100,7 @@ main .boost-section h2 {
   font-weight: 700;
   color: whitesmoke; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   main .introductional-section .content-wrapper {
     text-align: left; }
     main .introductional-section .content-wrapper h2 {
@@ -131,7 +131,7 @@ main .boost-section h2 {
   font-size: 1.8rem;
   color: #2acfcf; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .link-results__original, .link-results__btn, .link-results__short {
     font-size: 2rem; } }
 
@@ -201,7 +201,7 @@ button:active {
   height: 5rem;
   width: 100%; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .link-shortener__btn {
     flex-basis: 20%;
     height: 7rem; } }
@@ -222,7 +222,7 @@ button:active {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .authentication__login-btn {
     margin-right: 4rem; }
   .authentication__sign-btn {
@@ -239,7 +239,7 @@ button:active {
   width: 100%;
   background: #2acfcf; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .link-results__btn {
     height: auto;
     margin-top: 0;
@@ -274,7 +274,7 @@ nav {
     display: flex;
     flex-direction: column; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   nav {
     align-items: center;
     margin-left: 16rem;
@@ -353,7 +353,12 @@ main {
   .introductional-section .responsive-br {
     display: none; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
+  .introductional-section .img-wrapper {
+    display: flex;
+    justify-content: center; } }
+
+@media only screen and (min-width: 1200px) {
   .introductional-section {
     display: flex;
     align-content: center;
@@ -394,7 +399,7 @@ main {
   padding-left: 0.5rem;
   margin-bottom: 1rem; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .error-span {
     position: absolute;
     top: 15rem;
@@ -429,7 +434,7 @@ main {
       .statistics-section .wrapper .image-container img {
         width: 5rem; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .statistics-section {
     padding: 20rem 16rem 10rem 16rem; }
     .statistics-section .intro {
@@ -461,7 +466,7 @@ main {
   .link-results__short {
     padding: 1rem; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .link-results__wrapper {
     display: flex;
     justify-content: space-between;
@@ -487,7 +492,7 @@ main {
   background-size: cover;
   background-position-x: right; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   .boost-section {
     background-image: url(../images/bg-boost-desktop.svg); } }
 
@@ -514,7 +519,7 @@ footer {
     footer .socials__icon:not(:last-child) {
       margin-right: 2rem; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1200px) {
   footer {
     padding: 8rem 16rem;
     display: flex;

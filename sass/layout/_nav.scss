@@ -35,8 +35,8 @@ nav{
          }
 }
 
-//media large 1400px
-@include media(large){
+
+@include media(medium){
     
     nav{
         align-items: center;

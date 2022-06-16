@@ -33,7 +33,7 @@ footer{
     }
 }
 
-@include media(large){
+@include media(medium){
     footer{
         padding:8rem 16rem;
         display: flex ;

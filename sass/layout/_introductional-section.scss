@@ -54,8 +54,16 @@
     }
 }
 
+@include media(tablet){
+    .introductional-section{
+        .img-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
 
-@include media(large){
+@include media(medium){
     .introductional-section{
         display: flex;
         align-content: center;
@@ -107,7 +115,7 @@
     margin-bottom: 1rem;
 
 }
-@include media(large){
+@include media(medium){
     .error-span{
         position: absolute;
         top:15rem;

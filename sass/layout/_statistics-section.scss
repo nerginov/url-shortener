@@ -33,7 +33,7 @@
     }
 }
 
-@include media(large){
+@include media(medium){
     .statistics-section{
         padding:20rem 16rem 10rem 16rem;
 
@@ -88,7 +88,7 @@
         }
     }
     
-    @include media(large){
+    @include media(medium){
         .link-results{
             &__wrapper{
             display: flex;

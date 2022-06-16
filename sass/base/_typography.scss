@@ -28,7 +28,7 @@ html{
     }
 }
 
-@include media(large){
+@include media(medium){
     .nav-container{
         ul{
             li{
@@ -124,7 +124,7 @@ main{
     }
 }
 
-@include media(large){
+@include media(medium){
     main{
         .introductional-section{
         .content-wrapper{
@@ -180,7 +180,7 @@ main{
         color:$Cyan;
     }
 }
-@include  media(large){
+@include  media(medium){
     .link-results{
     &__original,
     &__btn,

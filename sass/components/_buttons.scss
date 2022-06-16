@@ -33,7 +33,7 @@ button:active{
     height: 5rem;
     width: 100%;
 }
-@include media(large){
+@include media(medium){
    .link-shortener__btn{
         flex-basis: 20%;
         height:7rem;
@@ -58,7 +58,7 @@ button:active{
     padding-top: 1.5rem;
 }
 
-@include media(large){
+@include media(medium){
     .authentication__login-btn{
         margin-right: 4rem;
     }
@@ -78,7 +78,7 @@ button:active{
     width: 100%;
     background: $Cyan;
 }
-@include media(large){
+@include media(medium){
     .link-results__btn{
         height: auto;
             margin-top: 0;
