@@ -1,4 +1,4 @@
-# Project Title
+# Url Shortener
 
 A one page web appliaction using https://shrtco.de/ API, to give it's users an easy way to shorten their links, and make them easier to remember or share.
 
