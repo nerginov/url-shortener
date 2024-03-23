@@ -1,19 +1,31 @@
-.boost-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    height: 30rem;
-    background-color:$DarkViolet;
-    background-image: url(../images/bg-boost-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: right;
+.boost-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 30rem;
+  background-color: $DarkViolet;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  h2 {
+    opacity: 0;
+  }
+  button {
+    opacity: 0;
+  }
+}
+.boost-section--int {
+  h2,
+  button {
+    animation: slideFromBottom 1s ease-in-out forwards;
+  }
 }
 
-@include media(medium){
-    .boost-section{
-        background-image: url(../images/bg-boost-desktop.svg);
-    }
+@include media(medium) {
+  .boost-section {
+    background-image: url(../images/bg-boost-desktop.svg);
+  }
 }

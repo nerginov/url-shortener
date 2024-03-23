@@ -4,11 +4,15 @@
   "description": "![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-  "compile:sass":"node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass --watch sass/main.scss css/style.css"
   },
   "author": "Soner Nerginov Hyuseinov",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "sass": "^1.72.0"
   }
 }

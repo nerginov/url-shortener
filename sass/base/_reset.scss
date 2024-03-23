@@ -1,22 +1,17 @@
-*,*::before,*::after{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
-
 
 //hidding elements class
-.hidden{
-    display: none !important;
+.hidden {
+  display: none !important;
 }
-
-
-
-
-
-
-

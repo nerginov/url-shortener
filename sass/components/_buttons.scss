@@ -1,88 +1,88 @@
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-button:hover{
-    opacity: .8;
+button:hover {
+  opacity: 0.8;
 }
-button:active{
-    transform: translateY(0.2rem);
-}
-
-.getStarted-btn{
-    appearance: none;
-    border: none;
-    border-radius: 3rem;
-    padding: 2rem 5rem;
-    background-color: $Cyan;
-
-    
-    &--introduction{
-        margin-top: 4rem;
-    }
-    
-    &--boost{
-        margin-top: 2rem;
-    }
+button:active {
+  transform: translateY(0.2rem) !important;
 }
 
-.link-shortener__btn{
-    appearance: none;
-    background: $Cyan;
-    border: none;
-    border-radius: 0.8rem;
-    height: 5rem;
-    width: 100%;
-}
-@include media(medium){
-   .link-shortener__btn{
-        flex-basis: 20%;
-        height:7rem;
-    }
+.getStarted-btn,
+.signIn-btn,
+.signUp-btn {
+  appearance: none;
+  border: none;
+  border-radius: 3rem;
+  padding: 2rem 5rem;
+  background-color: $Cyan;
+
+  &--introduction {
+    margin-top: 4rem;
+  }
+
+  &--boost {
+    margin-top: 2rem;
+  }
 }
 
-.authentication__login-btn{
-    appearance: none;
-    -webkit-appearance: none;
-    border: none;
-    background: none;
-    margin-bottom: 4rem;
-
+.link-shortener__btn {
+  appearance: none;
+  background: $Cyan;
+  border: none;
+  border-radius: 0.8rem;
+  height: 5rem;
+  width: 100%;
 }
-.authentication__sign-btn{
-    appearance: none;
-    -webkit-appearance: none;
-    border: none;
-    background-color: $Cyan;
-    border-radius: 3rem;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
+@include media(medium) {
+  .link-shortener__btn {
+    flex-basis: 20%;
+    height: 7rem;
+  }
 }
 
-@include media(medium){
-    .authentication__login-btn{
-        margin-right: 4rem;
-    }
-    .authentication__sign-btn{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+.authentication__login-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: none;
+  margin-bottom: 4rem;
+}
+.authentication__sign-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background-color: $Cyan;
+  border-radius: 3rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
-.link-results__btn{
-    appearance: none;
-    -webkit-appearance: none;
-    height: 4rem;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    width: 100%;
-    background: $Cyan;
+@include media(medium) {
+  .authentication__login-btn {
+    margin-right: 4rem;
+  }
+  .authentication__sign-btn {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
-@include media(medium){
-    .link-results__btn{
-        height: auto;
-            margin-top: 0;
-            padding: 1rem 3rem;
-            margin-left: 2rem;
-    }
+
+.link-results__btn {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 4rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  background: $Cyan;
+}
+@include media(medium) {
+  .link-results__btn {
+    height: auto;
+    margin-top: 0;
+    padding: 1rem 3rem;
+    margin-left: 2rem;
+  }
 }

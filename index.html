@@ -1,135 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script defer src="js/script.js"></script>
     <title>URL shortener</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- navigation -->
-    <nav>
-        <img src="images/logo.svg" alt="logo-img">
-        <div class="burger-menu">
-            <input type="checkbox"  class="burger-menu__checkbox">
-            <div class="burger-menu__lines">
-            <span class="line line--1"></span>
-            <span class="line line--2"></span>
-            <span class="line line--3"></span>
-            </div>
+    <nav class="navbar" role="navigation">
+      <img src="images/logo.svg" alt="logo-img" />
+      <div class="burger-menu" aria-label="burger-menu toggler">
+        <input
+          type="checkbox"
+          class="burger-menu__checkbox"
+          aria-expanded="false"
+        />
+        <div class="burger-menu__lines">
+          <span class="line line--1"></span>
+          <span class="line line--2"></span>
+          <span class="line line--3"></span>
         </div>
-      
-        <div class="nav-container hidden">
-            <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Resources</a></li>
-            </ul>
-           <div class="authentication">
-         <button class="authentication__login-btn">Login</button>
-         <button class="authentication__sign-btn">Sign Up</button>
-           </div>
+      </div>
+
+      <div class="nav-container hidden" aria-labelledby="navigation">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+        <div class="authentication">
+          <button
+            class="authentication__login-btn"
+            arria-label="Opens sign in modal"
+          >
+            Login
+          </button>
+          <button
+            class="authentication__sign-btn"
+            arria-label="Opens sign up modal"
+          >
+            Sign Up
+          </button>
         </div>
+      </div>
     </nav>
     <main>
-<!-- introductional section + link shortener -->
-    <section class="introductional-section">
+      <!-- introductional section + link shortener -->
+      <section class="introductional-section" aria-label="hero">
         <div class="img-wrapper">
-            <img src="images/illustration-working.svg" alt="working-illustration" '>
+          <img
+            src="images/illustration-working.svg"
+            alt="working-illustration"
+          />
         </div>
         <div class="content-wrapper">
-            <h2>
-                More than just<br>shorter links
-            </h2>
-            <p>Build your brand's recognition and get detailed <br class="responsive-br"> insight on how your links are performing</p>
-            <button class="getStarted-btn getStarted-btn--introduction">Get Started</button>
+          <h2>More than just<br />shorter links</h2>
+          <p>
+            Build your brand's recognition and get detailed
+            <br class="responsive-br" />
+            insight on how your links are performing
+          </p>
+          <button
+            class="getStarted-btn getStarted-btn--introduction"
+            aria-label="scroll to url shortener input"
+          >
+            Get Started
+          </button>
         </div>
 
         <!--inject via javascript-->
-        
-       
+
         <div class="link-shortener">
-            <input type="text" class="link-shortener__input" placeholder="Shorten a link here...">
-            <button class="link-shortener__btn">Shorten It!</button>
-            </div>
-    </section>
-<!-- Advanced statistics-section -->
-    <section class="statistics-section">
+          <input
+            type="text"
+            class="link-shortener__input"
+            placeholder="Shorten a link here..."
+            aria-label="link input for shortening"
+          />
+          <button class="link-shortener__btn" aria-label="shortens input link">
+            Shorten It!
+          </button>
+        </div>
+      </section>
+      <!-- Advanced statistics-section -->
+      <section class="statistics-section">
         <div class="intro">
-            <h2>Advanced Statistics</h2>
-            <p>Track how your links are performing across the web<br class="responsive-br"> with our advanced statistics dashboard</p>
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web<br
+              class="responsive-br"
+            />
+            with our advanced statistics dashboard
+          </p>
         </div>
         <div class="wrapper-container">
-        <div class='wrapper wrapper--recognition'>
-            <div class="image-container"><img src="images/icon-brand-recognition.svg" alt="brand-recognition-icon" class="wrapper__icon wrapper__icon--recognition">
+          <div class="wrapper wrapper--recognition">
+            <div class="image-container">
+              <img
+                src="images/icon-brand-recognition.svg"
+                alt="brand-recognition-icon"
+                class="wrapper__icon wrapper__icon--recognition"
+              />
             </div>
             <h2>Brand Recognition</h2>
-            <p>Boost your brand recognition with each click.Generic links don't mean a thing.Branded links help instil confidence in your content.</p>
-        </div>
-        <div class="wrapper wrapper--records">
+            <p>
+              Boost your brand recognition with each click.Generic links don't
+              mean a thing.Branded links help instil confidence in your content.
+            </p>
+          </div>
+          <div class="wrapper wrapper--records">
             <div class="image-container">
-            <img src="images/icon-detailed-records.svg" alt="detailed-records-icon" class="wrapper__icon wrapper__icon--records">
-           </div>
+              <img
+                src="images/icon-detailed-records.svg"
+                alt="detailed-records-icon"
+                class="wrapper__icon wrapper__icon--records"
+              />
+            </div>
             <h2>Detailed Records</h2>
-            <p>Gain insights into who is clicking your links.Knowing when adn where people engage wih your content helps inform better decisions.</p>
-        </div>
-        <div class="wrapper wrapper--customizable">
+            <p>
+              Gain insights into who is clicking your links.Knowing when adn
+              where people engage wih your content helps inform better
+              decisions.
+            </p>
+          </div>
+          <div class="wrapper wrapper--customizable">
             <div class="image-container">
-            <img src="images/icon-fully-customizable.svg" alt="fully-customizable-icon" class="wrapper__icon wrapper__icon--customizable">
+              <img
+                src="images/icon-fully-customizable.svg"
+                alt="fully-customizable-icon"
+                class="wrapper__icon wrapper__icon--customizable"
+              />
             </div>
             <h2>Fully Customizable</h2>
-            <p>Improve brand awareness and content discoverablility through cusomizable links, supercharging audience engagement.</p>
+            <p>
+              Improve brand awareness and content discoverablility through
+              cusomizable links, supercharging audience engagement.
+            </p>
+          </div>
         </div>
-    </div>
-    </section>
-<!-- boost section -->
-    <section class="boost-section">
-      <h2>Boost your links today</h2>
-      <button class="getStarted-btn getStarted-btn--boost">Get Started</button>
-    </section>
+      </section>
+      <!-- boost section -->
+      <section class="boost-section">
+        <h2>Boost your links today</h2>
+        <button
+          class="getStarted-btn getStarted-btn--boost"
+          aria-label="scroll to url shortener input"
+        >
+          Get Started
+        </button>
+      </section>
     </main>
-<!-- FOOTER -->
-    <footer>
-        <img src="images/logo.svg" alt="logo-img" class="footer__logo">
+    <!-- FOOTER -->
+    <footer class="footer">
+      <img src="images/logo.svg" alt="logo-img" class="footer__logo" />
 
-        <div class='links links--features'>
+      <div class="links links--features">
         <h4>Features</h4>
-            <ul>
-                <li><a href="#">Link Shortening</a></li>
-                <li><a href="#">Branded Links</a></li>
-                <li><a href="#">Analytics</a></li>
-            </ul>
-        </div>
+        <ul>
+          <li><a href="#">Link Shortening</a></li>
+          <li><a href="#">Branded Links</a></li>
+          <li><a href="#">Analytics</a></li>
+        </ul>
+      </div>
 
-        <div class="links links--resources">
-            <h4>Resources</h4>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Developers</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </div>
+      <div class="links links--resources">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
 
-            <div class="links links--company">
-                <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-<!-- footer-social-icons -->
-                <div class="socials">
-                    <img src="images/icon-facebook.svg" alt="facebook-icon" class="socials__icon socials__icon--facebook">
-                    <img src="images/icon-twitter.svg" alt="twitter-icon" class="socials__icon socials__icon--twitter">
-                    <img src="images/icon-pinterest.svg" alt="pinterest-icon" class="socials__icon socials__icon--pinterest">
-                    <img src="images/icon-instagram.svg" alt="instagram-icon" class="socials__icon socials__icon--instagram">
-                </div>
+      <div class="links links--company">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <!-- footer-social-icons -->
+      <div class="socials">
+        <img
+          src="images/icon-facebook.svg"
+          alt="facebook-icon"
+          class="socials__icon socials__icon--facebook"
+        />
+        <img
+          src="images/icon-twitter.svg"
+          alt="twitter-icon"
+          class="socials__icon socials__icon--twitter"
+        />
+        <img
+          src="images/icon-pinterest.svg"
+          alt="pinterest-icon"
+          class="socials__icon socials__icon--pinterest"
+        />
+        <img
+          src="images/icon-instagram.svg"
+          alt="instagram-icon"
+          class="socials__icon socials__icon--instagram"
+        />
+      </div>
+      <div class="sign-in" aria-modal="true">
+        <form class="sign-in__form" name="sign-in__form">
+          <header>
+            <h1>Login</h1>
+            <button class="sign-in__close">X</button>
+          </header>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="#ffffff"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+              />
+            </svg>
+            <label for="sign-in-email"">Email:</label>
+            <input
+              type="email"
+              id="sign-in-email"
+              name="sign-in-email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#ffffff"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H144V144z"
+              />
+            </svg>
+            <label for="sign-in-password">Password:</label>
+            <input
+              type="password"
+              id="sign-in-password"
+              name="sign-in-password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <a href="#">Forgot Password</a>
+          <button type="submit" class="signIn-btn">Sign In</button>
+          <p>
+            Don't have an account?
+            <a href="#" class="signUp-Redirect" aria-label="opens sign in modal"
+              >Sign Up</a
+            >
+          </p>
+        </form>
+      </div>
+      <div class="sign-up" aria-modal="true">
+        <form class="sign-up__form" name="sign-up__form">
+          <header>
+            <h1>Sign Up</h1>
+            <button class="sign-up__close">X</button>
+          </header>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              fill="#ffffff"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+              />
+            </svg>
+            <label for="sign-up-email">Email:</label>
+            <input
+              type="email"
+              id="sign-up-email"
+              name="sign-up-email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#ffffff"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H144V144z"
+              />
+            </svg>
+            <label for="sign-up-password">Password:</label>
+            <input
+              type="password"
+              id="sign-up-password"
+              name="sign-up-password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              fill="#ffffff"
+            >
+              <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M144 144c0-44.2 35.8-80 80-80c31.9 0 59.4 18.6 72.3 45.7c7.6 16 26.7 22.8 42.6 15.2s22.8-26.7 15.2-42.6C331 33.7 281.5 0 224 0C144.5 0 80 64.5 80 144v48H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H144V144z"
+              />
+            </svg>
+            <label for="sign-up-confirm-password">Password Confirmation:</label>
+            <input
+              type="password"
+              id="sign-up-confirm-password"
+              name="sign-up-confirm-password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="signUp-btn">Sign Up</button>
+          <p>
+            Already Have an Account?
+            <a href="#" class="signIn-Redirect" aria-label="opens sign in modal"
+              >Sign In</a
+            >
+          </p>
+        </form>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

@@ -1,110 +1,131 @@
-.statistics-section{
-    background-color: $Gray;
-    padding:16rem 2rem 5rem 2rem;
+.statistics-section {
+  background-color: $Gray;
+  padding: 16rem 2rem 5rem 2rem;
 
-    .intro{
-        text-align: center;
-        margin-bottom: 10rem;
+  .intro {
+    text-align: center;
+    margin-bottom: 10rem;
+    opacity: 0;
+    &--int {
+      animation: slideFromBottom 1s ease-in-out forwards;
     }
+  }
 
-    .wrapper{
-      position: relative;
-      background-color: whitesmoke;
-      margin-bottom: 10rem;
-      text-align: center;
-      border-radius: 0.5rem;
-      padding: 10rem 2rem 4rem 2rem;
-
-      h2{
-          margin-bottom: 2rem;
-        }
-
-      .image-container{
-          display: flex;
-          background-color: $DarkViolet;
-          border-radius: 50%;
-          padding: 3rem;
-          @include absolute-center(horizontal);
-          top: -6rem;
-          img{
-              width: 5rem;
-          }
+  .wrapper {
+    opacity: 0;
+    position: relative;
+    background-color: whitesmoke;
+    margin-bottom: 10rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 10rem 2rem 4rem 2rem;
+    &--recognition {
+      &--int {
+        animation: slideFromBottom 1s ease-in-out forwards;
       }
     }
+    &--customizable {
+      &--int {
+        animation: slideFromBottom 1s ease-in-out forwards;
+      }
+    }
+    &--records {
+      &--int {
+        animation: slideFromBottom 1s ease-in-out forwards;
+      }
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .image-container {
+      display: flex;
+      background-color: $DarkViolet;
+      border-radius: 50%;
+      padding: 3rem;
+      @include absolute-center(horizontal);
+      top: -6rem;
+      img {
+        width: 5rem;
+      }
+    }
+  }
 }
 
-@include media(medium){
-    .statistics-section{
-        padding:20rem 16rem 10rem 16rem;
+@include media(medium) {
+  .statistics-section {
+    padding: 20rem 8rem 10rem 8rem;
 
-        .intro{
-            margin-bottom: 15rem;
-        }
-
-.wrapper-container{
-    display: flex;
-
-    .wrapper:not(:last-child){
-        margin-right: 4rem;
+    .intro {
+      margin-bottom: 15rem;
     }
-    .wrapper{
+
+    .wrapper-container {
+      display: flex;
+
+      .wrapper:not(:last-child) {
+        margin-right: 4rem;
+      }
+      .wrapper {
         background-color: white;
         text-align: left;
-        &--records{
-            top:4rem
+
+        &--records {
+          top: 4rem;
         }
-        &--customizable{
-            top:8rem;
+        &--customizable {
+          top: 8rem;
         }
-        .image-container{
-            left: 10rem;
+        .image-container {
+          left: 10rem;
         }
+      }
     }
+  }
 }
-        
-    }
-    }
+@include media(large) {
+  .statistics-section {
+    padding: 20rem 16rem 10rem 16rem;
+  }
+}
 
+//injected via js
+.link-results {
+  margin-top: -5rem;
+  margin-bottom: 8rem;
 
+  &__wrapper {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
 
-    //injected via js
-.link-results{
-    margin-top: -5rem;
-    margin-bottom:8rem;
-    
-        &__wrapper{
-            margin-bottom: 2rem;
-            background-color: white;
-            border-radius: 0.5rem;
-        }
-        
-        &__original{
-            padding: 1rem;
-            border-bottom: 0.2rem solid $Gray;
-        }
-    
-        &__short{
-            padding: 1rem;
-        }
+  &__original {
+    padding: 1rem;
+    border-bottom: 0.2rem solid $Gray;
+  }
+
+  &__short {
+    padding: 1rem;
+  }
+}
+
+@include media(medium) {
+  .link-results {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    
-    @include media(medium){
-        .link-results{
-            &__wrapper{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-           
-            }
-            &__original{
-                margin-left: 2rem;
-                border: none;
-            }
-            &__short{
-                display: flex;
-                margin-right: 2rem;
-                align-items: center;
-    
-            }
-        }
+    &__original {
+      margin-left: 2rem;
+      border: none;
     }
+    &__short {
+      display: flex;
+      margin-right: 2rem;
+      align-items: center;
+    }
+  }
+}

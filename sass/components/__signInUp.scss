@@ -1,0 +1,157 @@
+.sign-in,
+.sign-up {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  //   margin: auto;
+  //   width: 100vw;
+  z-index: 200000;
+  background-color: $DarkViolet;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-size: cover;
+  @include media(medium) {
+    max-height: 58rem;
+    border-radius: 1rem;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+  }
+  @include media(large) {
+    border-radius: 1rem;
+    left: 30%;
+    right: 30%;
+    top: 10%;
+  }
+  form {
+    @include media(tablet) {
+      padding: 15rem 10rem;
+    }
+    @include media(medium) {
+      padding: 5rem 10rem;
+    }
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        color: white;
+        font-size: 2.4rem;
+        margin-bottom: 15rem;
+        @include media(medium) {
+          margin-bottom: 10rem;
+        }
+      }
+
+      button {
+        color: white;
+        font-size: 2.4rem;
+        height: max-content;
+        appearance: none;
+        background: none;
+        border: none;
+      }
+    }
+
+    label {
+      // Hide visually
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    div:not(:last-of-type) {
+      margin-bottom: 4rem;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $Gray;
+
+      input {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        color: white;
+        font-size: 1.6rem;
+        appearance: none;
+        border: none;
+        background: none;
+        margin-left: 1.5rem;
+        height: 3rem;
+        font-weight: bold;
+
+        &::placeholder {
+          font-size: 1.6rem;
+          color: $Gray;
+          font-weight: bold;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    a {
+      text-align: left;
+      margin-top: 0.5rem;
+      color: $Gray;
+      font-size: 1.4rem;
+    }
+
+    svg {
+      color: white;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .signIn-btn {
+    margin-top: 10rem;
+    font-size: 1.6rem;
+    color: white;
+    @include media(tablet) {
+      margin-top: 15rem;
+    }
+    @include media(medium) {
+      margin-top: 10rem;
+    }
+  }
+  .signUp-btn {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    color: white;
+    @include media(tablet) {
+      margin-top: 10rem;
+    }
+    @include media(medium) {
+      margin-top: 5rem;
+    }
+  }
+
+  p {
+    color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}
+.visible {
+  display: block;
+}
